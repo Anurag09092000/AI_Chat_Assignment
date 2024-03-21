@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+ .App {
+  font-family: 'Inter',sans-serif;
+}
+.chat-container {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Individual chat messages */
+.message {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 70%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Bot message */
+.bot-message {
+  background-color: #007bff;
+  color: white;
+  align-self: flex-start; /* Align bot messages to the left */
+}
+
+/* User message */
+.user-message {
+  background-color: #28a745;
+  color: white;
+  align-self: flex-end; /* Align user messages to the right */
+}
+
+/* Emoji container */
+.emoji {
+  position: absolute;
+}
+
+/* Emoji position for bot messages */
+.bot-message .emoji {
+  left: -20px;
+  bottom: 50%;
+  transform: translateY(-70%);
+ 
+}
+
+/* Emoji position for user messages */
+.user-message .emoji {
+  right: -20px;
+  bottom: 50%;
+  transform: translateY(-70%);
+}
+.heading{
+  text-align: center;
+  display: inline-block;
+  padding-bottom:10px;
+}
+.btn {
+  display: inline-block;
+  margin: 10px auto; /* Center the button horizontally */
+  padding: 5px 10px;
+  background-color: purple;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right:10px;
+  margin-left: 100px;
+  margin-bottom: 50px;
+}
