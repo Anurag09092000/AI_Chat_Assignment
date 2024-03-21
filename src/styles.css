@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
- .App {
-  font-family: 'Inter',sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+* {
+  font-family: "Inter", sans-serif !important;
 }
 .chat-container {
   max-width: 500px;
@@ -10,12 +10,13 @@
   border-radius: 10px;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 /* Individual chat messages */
 .message {
   margin-bottom: 10px;
-  padding: 10px;
+  padding: 5px;
   border-radius: 10px;
   max-width: 70%;
   position: relative;
@@ -28,6 +29,7 @@
   background-color: #007bff;
   color: white;
   align-self: flex-start; /* Align bot messages to the left */
+  margin-left: 5px;
 }
 
 /* User message */
@@ -46,20 +48,19 @@
 .bot-message .emoji {
   left: -20px;
   bottom: 50%;
-  transform: translateY(-70%);
- 
+  transform: translateY(200%);
 }
 
 /* Emoji position for user messages */
 .user-message .emoji {
   right: -20px;
   bottom: 50%;
-  transform: translateY(-70%);
+  transform: translateY(200%);
 }
-.heading{
+.heading {
   text-align: center;
   display: inline-block;
-  padding-bottom:10px;
+  padding-bottom: 50px;
 }
 .btn {
   display: inline-block;
@@ -70,7 +71,17 @@
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin-right:10px;
-  margin-left: 100px;
-  margin-bottom: 50px;
+  margin-right: 5%;
+  margin-left: 70%;
+  /* margin-bottom: 50px; */
+  /* position: absolute; Position the button absolutely within the container */
+  bottom: 10px; /* Distance from the bottom of the container */
+  right: 10px; /* Distance from the right of the container */
+}
+.message-emoji {
+  display: flex;
+}
+.message-text {
+  margin-left: 10px;
+  margin-right: 10px;
 }
